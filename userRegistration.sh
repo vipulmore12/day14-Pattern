@@ -17,3 +17,12 @@ then
 else
 	echo "Invalid Last Name"
 fi
+echo "Enter email"
+read email
+patEmail="^[a-zA-Z]{5}[0-9a-zA-Z\.\_\-]*\@[a-z]*\.(com|co|in)$"
+if [[ $email =~ $patEmail ]]
+then
+	echo "Valid email"
+else
+	echo "Invalid email"
+fi
