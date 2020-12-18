@@ -37,7 +37,7 @@ else
 fi
 echo "Enter password"
 read pass
-patPass="^[A-Za-z0-9]{8,}$"
+patPass="^[A-Za-z0-9!@#$^&*]{8,}$"
 if [[ $pass =~ $patPass ]]
 then
 	echo "Valid password"
